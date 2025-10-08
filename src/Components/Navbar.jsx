@@ -23,9 +23,11 @@ const Navbar = () => {
               <NavLink to="/installation" className='link link-hover'>Installation</NavLink>
             </ul>
           </div>
-          <button className="hidden md:flex ml-4 bg-gradient-to-r from-[#422AD5] to-[#7867e9] text-white px-4 py-2 rounded-lg">
+         <Link to="https://github.com/saifuldoict">
+             <button className="hidden md:flex ml-4 bg-gradient-to-r from-[#422AD5] to-[#7867e9] text-white px-4 py-2 rounded-lg">
              <img src={git} className="flex justify-center items-center gap-1.5 pr-1"/> Contribute
             </button>
+         </Link>
 
          
           <div className="md:hidden">

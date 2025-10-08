@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
-
+import { FaStar } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 const ProductCard = ({ product }) => {
   const { title, image, ratingAvg, downloads,id } = product
   return (
@@ -12,8 +13,16 @@ const ProductCard = ({ product }) => {
       <div className='card-body'>
         <h2 className='card-title'>{title}</h2>
 
-        <p> {downloads}</p>
-        <p>{ratingAvg}</p>
+        <div className='flex justify-center  mx-auto gap-40'>
+          <div className='flex items-center gap-1 bg-gray-300 px-2 rounded'>
+            <FaArrowDown className='text-green-500'/>
+            <p className='flex items-center gap-1 text-green-500 px-2 rounded bg-gray-300'> {downloads}</p>
+          </div>
+        <div className='flex items-center gap-1 bg-gray-300 px-2 rounded'>
+          <FaStar  className='text-yellow-400'/>
+          <p className='text-blue-900'> {ratingAvg}</p>
+        </div>
+        </div>
     
       </div>
     </div>

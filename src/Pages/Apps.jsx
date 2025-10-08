@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import useProducts from '../hooks/useProducts'
 import SkeletonLoader from '../Components/SkeletonLoader'
 import { Link } from 'react-router'
-
+import { FaStar } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
 const Apps = () => {
   const { loading, products } = useProducts()
@@ -66,8 +67,16 @@ const Apps = () => {
                   </figure>
                   <div className='card-body'>
                     <h2 className='card-title'>{product.title}</h2>
-                    <p>Downloads: {product.downloads}</p>
-                    <p>Rating: {product.ratingAvg}</p>
+                    <div className='flex justify-center  mx-auto gap-40'>
+                              <div className='flex items-center gap-1 bg-gray-300 px-2 rounded'>
+                                <FaArrowDown className='text-green-500'/>
+                                <p className='flex items-center gap-1 text-green-500 px-2 rounded bg-gray-300'> {product.downloads}</p>
+                              </div>
+                            <div className='flex items-center gap-1 bg-gray-300 px-2 rounded'>
+                              <FaStar  className='text-yellow-400'/>
+                              <p className='text-blue-900'> {product.ratingAvg}</p>
+                            </div>
+                            </div>
                   </div>
                 </Link>
               ))}

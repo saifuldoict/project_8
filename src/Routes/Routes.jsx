@@ -1,34 +1,36 @@
 import React from 'react'
 import { createBrowserRouter } from "react-router";
-import Home from '../Pages/Home.jsx';
+import Home from '../Pages/Home.jsx'
+import MainLayout from '../Layouts/MainLayout.jsx'
+import Apps from '../Pages/Apps.jsx'
+import Installation from '../Pages/Installation.jsx'
+import AppDetailPage from '../Pages/AppDetailPage.jsx'
+import ErrorPage from '../Pages/ErrorPage.jsx'  // ✅ Import error page
 
-import MainLayout from '../Layouts/MainLayout.jsx';
-import Apps from '../Pages/Apps.jsx';
-import Installation from '../Pages/Installation.jsx';
-
-
-const router= createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout/>,
+    element: <MainLayout />,
+    errorElement: <ErrorPage />, // ✅ Attach here so navbar still shows
     children: [
       {
-    path: "/apps",
-    element: <Apps/>
-  },
+        path: "/",
+        element: <Home />
+      },
       {
-    path: "/",
-    element: <Home/>
-  },
-   {
-    path: "/installation",
-    element: <Installation/>
-  },
-
-      ]
-
-  },
-  
+        path: "/apps",
+        element: <Apps />
+      },
+      {
+        path: "/installation",
+        element: <Installation />
+      },
+      {
+        path: "/apps/:id",
+        element: <AppDetailPage />
+      },
+    ]
+  }
 ])
 
 export default router

@@ -18,9 +18,9 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex items-center gap-6">
             <ul className="flex items-center gap-6">
-             <NavLink to="/" >Home</NavLink>
-              <NavLink to="/apps" >Apps</NavLink>
-              <NavLink to="/installation" >Installation</NavLink>
+             <NavLink to="/" className='link link-hover'>Home</NavLink>
+              <NavLink to="/apps" className='link link-hover'>Apps</NavLink>
+              <NavLink to="/installation" className='link link-hover'>Installation</NavLink>
             </ul>
           </div>
           <button className="hidden md:flex ml-4 bg-gradient-to-r from-[#422AD5] to-[#7867e9] text-white px-4 py-2 rounded-lg">
@@ -48,9 +48,9 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <ul className="flex flex-col gap-4 p-4">
-            <NavLink to="#" >Home</NavLink>
-              <NavLink to="#" >Apps</NavLink>
-              <NavLink to="#" >Installation</NavLink>
+            <NavLink to="#" className='link link-hover'>Home</NavLink>
+              <NavLink to="#" className='link link-hover'>Apps</NavLink>
+              <NavLink to="#" className='link link-hover'>Installation</NavLink>
             
           </ul>
           <button className="flex w-full ml-4 bg-gradient-to-r from-[#422AD5] to-[#7867e9] text-white px-4 py-2 rounded-lg">

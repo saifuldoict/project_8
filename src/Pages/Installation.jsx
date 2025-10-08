@@ -2,7 +2,7 @@ import React from 'react'
 
 const Installation = () => {
   return (
-    <div>Installation</div>
+    <div className='max-w-[1200px] mx-auto px-4'>Installation</div>
   )
 }
 

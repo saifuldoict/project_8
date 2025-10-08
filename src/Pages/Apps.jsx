@@ -2,16 +2,7 @@ import React, { useState } from 'react'
 import useProducts from '../hooks/useProducts'
 import SkeletonLoader from '../Components/SkeletonLoader'
 import { Link } from 'react-router'
-import {
-  ResponsiveContainer,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-} from 'recharts'
+
 
 const Apps = () => {
   const { loading, products } = useProducts()
@@ -24,12 +15,6 @@ const Apps = () => {
         product.title.toLowerCase().includes(term)
       )
     : products
-
-  const chartData = searchedProducts.map(p => ({
-    name: p.title.length > 10 ? p.title.slice(0, 10) + '…' : p.title,
-    downloads: p.downloads,
-    rating: p.ratingAvg,
-  }))
 
   return (
     <div className='max-w-[1200px] mx-auto px-4 pt-7'>
@@ -88,22 +73,6 @@ const Apps = () => {
               ))}
             </div>
           )}
-
-          {/* Optional: Show Chart Below */}
-          <div className='mt-12'>
-            <h2 className='text-2xl font-semibold mb-4'>Downloads & Ratings Overview</h2>
-            <ResponsiveContainer width='100%' height={300}>
-              <BarChart data={chartData}>
-                <CartesianGrid strokeDasharray='3 3' />
-                <XAxis dataKey='name' />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey='downloads' fill='#422AD5' />
-                <Bar dataKey='rating' fill='#7867e9' />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
         </div>
       )}
     </div>

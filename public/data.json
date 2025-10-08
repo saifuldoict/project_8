@@ -1,0 +1,453 @@
+[
+  {
+    "image": "/images/app1.png",
+    "title": "TaskMaster Pro",
+    "companyName": "TechNova Inc.",
+    "id": 1,
+    "description": "A smart task management app designed to boost productivity with AI suggestions.",
+    "size": 52,
+    "reviews": 1345,
+    "ratingAvg": 4.6,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 65 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 560 }
+    ]
+  },
+  {
+    "image": "/images/app2.png",
+    "title": "FitTrack",
+    "companyName": "BodyTech",
+    "id": 2,
+    "description": "Track workouts, diet, and body metrics in real-time with cloud sync.",
+    "size": 64,
+    "reviews": 985,
+    "ratingAvg": 4.3,
+    "downloads": 89000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 360 },
+      { "name": "5 star", "count": 355 }
+    ]
+  },
+  {
+    "image": "/images/app3.png",
+    "title": "NoteEase",
+    "companyName": "PixelWare",
+    "id": 3,
+    "description": "Beautiful note-taking app with markdown support and cross-device sync.",
+    "size": 38,
+    "reviews": 1570,
+    "ratingAvg": 4.8,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 380 },
+      { "name": "5 star", "count": 1010 }
+    ]
+  },
+  {
+    "image": "/images/app4.png",
+    "title": "PhotoPerfect",
+    "companyName": "SnapZone",
+    "id": 4,
+    "description": "Advanced photo editing tools with filters, layers, and AI background removal.",
+    "size": 80,
+    "reviews": 2240,
+    "ratingAvg": 4.5,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1050 }
+    ]
+  },
+  {
+    "image": "/images/app5.png",
+    "title": "LearnMate",
+    "companyName": "EduCore",
+    "id": 5,
+    "description": "Personalized learning app with AI-based course recommendations.",
+    "size": 55,
+    "reviews": 1780,
+    "ratingAvg": 4.7,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 460 },
+      { "name": "5 star", "count": 1045 }
+    ]
+  },
+  {
+    "image": "/images/app6.png",
+    "title": "FinanceFlow",
+    "companyName": "Cashly",
+    "id": 6,
+    "description": "Budget planner and expense tracker with visual charts and insights.",
+    "size": 48,
+    "reviews": 890,
+    "ratingAvg": 4.2,
+    "downloads": 97000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 290 },
+      { "name": "5 star", "count": 240 }
+    ]
+  },
+  {
+    "image": "/images/app7.png",
+    "title": "WeatherPro",
+    "companyName": "SkyLabs",
+    "id": 7,
+    "description": "Accurate live weather updates and radar maps with climate analytics.",
+    "size": 42,
+    "reviews": 2150,
+    "ratingAvg": 4.4,
+    "downloads": 210000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  },
+  {
+    "image": "/images/app8.png",
+    "title": "TripEase",
+    "companyName": "Wanderly",
+    "id": 8,
+    "description": "Travel planner and itinerary generator with live maps and expense tracker.",
+    "size": 60,
+    "reviews": 1100,
+    "ratingAvg": 4.5,
+    "downloads": 132000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 380 },
+      { "name": "5 star", "count": 415 }
+    ]
+  },
+  {
+    "image": "/images/app9.png",
+    "title": "CodeCraft",
+    "companyName": "DevForge",
+    "id": 9,
+    "description": "All-in-one IDE for mobile coding with syntax highlighting and Git integration.",
+    "size": 85,
+    "reviews": 1580,
+    "ratingAvg": 4.6,
+    "downloads": 165000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "/images/app10.png",
+    "title": "Musicify",
+    "companyName": "SoundStorm",
+    "id": 10,
+    "description": "Stream, download, and organize your favorite music playlists offline.",
+    "size": 70,
+    "reviews": 2400,
+    "ratingAvg": 4.8,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 650 },
+      { "name": "5 star", "count": 1350 }
+    ]
+  },
+  {
+    "image": "/images/app11.png",
+    "title": "ShopEase",
+    "companyName": "MegaMart",
+    "id": 11,
+    "description": "Smart shopping app with deals, discounts, and order tracking.",
+    "size": 78,
+    "reviews": 1880,
+    "ratingAvg": 4.4,
+    "downloads": 170000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 540 },
+      { "name": "5 star", "count": 880 }
+    ]
+  },
+  {
+    "image": "/images/app12.png",
+    "title": "MindSpace",
+    "companyName": "CalmSphere",
+    "id": 12,
+    "description": "Guided meditation and breathing exercises to improve focus and sleep.",
+    "size": 40,
+    "reviews": 970,
+    "ratingAvg": 4.5,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 495 }
+    ]
+  },
+  {
+    "image": "/images/app13.png",
+    "title": "GameZone",
+    "companyName": "PlayVerse",
+    "id": 13,
+    "description": "Cloud gaming platform with instant play and leaderboard tracking.",
+    "size": 90,
+    "reviews": 2250,
+    "ratingAvg": 4.7,
+    "downloads": 310000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 650 },
+      { "name": "5 star", "count": 1220 }
+    ]
+  },
+  {
+    "image": "/images/app14.png",
+    "title": "QuickScan",
+    "companyName": "DocuTech",
+    "id": 14,
+    "description": "Scan, convert, and share documents easily with OCR and PDF export.",
+    "size": 30,
+    "reviews": 850,
+    "ratingAvg": 4.3,
+    "downloads": 78000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 270 }
+    ]
+  },
+  {
+    "image": "/images/app15.png",
+    "title": "ChatFlow",
+    "companyName": "TalkNet",
+    "id": 15,
+    "description": "Fast and secure messaging app with real-time encryption.",
+    "size": 62,
+    "reviews": 2000,
+    "ratingAvg": 4.6,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 560 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  },
+  {
+    "image": "/images/app16.png",
+    "title": "RecipeHub",
+    "companyName": "Cookify",
+    "id": 16,
+    "description": "Discover and share recipes with detailed instructions and timers.",
+    "size": 45,
+    "reviews": 1250,
+    "ratingAvg": 4.4,
+    "downloads": 110000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 520 }
+    ]
+  },
+  {
+    "image": "/images/app17.png",
+    "title": "CryptoWatch",
+    "companyName": "BitZone",
+    "id": 17,
+    "description": "Track cryptocurrency prices, charts, and news with live updates.",
+    "size": 50,
+    "reviews": 1640,
+    "ratingAvg": 4.5,
+    "downloads": 140000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 820 }
+    ]
+  },
+  {
+    "image": "/images/app18.png",
+    "title": "HealthSync",
+    "companyName": "MediSoft",
+    "id": 18,
+    "description": "Monitor your vitals, sleep patterns, and health records securely.",
+    "size": 56,
+    "reviews": 940,
+    "ratingAvg": 4.2,
+    "downloads": 88000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 170 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 310 }
+    ]
+  },
+  {
+    "image": "/images/app19.png",
+    "title": "LangLearn",
+    "companyName": "PolyLingua",
+    "id": 19,
+    "description": "Language learning app with AI speech recognition and daily challenges.",
+    "size": 58,
+    "reviews": 2120,
+    "ratingAvg": 4.8,
+    "downloads": 190000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 1380 }
+    ]
+  },
+  {
+    "image": "/images/app20.png",
+    "title": "FileVault",
+    "companyName": "SecureSoft",
+    "id": 20,
+    "description": "Encrypted file storage and sharing with automatic backup.",
+    "size": 72,
+    "reviews": 1180,
+    "ratingAvg": 4.3,
+    "downloads": 125000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 340 },
+      { "name": "5 star", "count": 490 }
+    ]
+  },
+  {
+    "image": "/images/app21.png",
+    "title": "Artify",
+    "companyName": "DesignVerse",
+    "id": 21,
+    "description": "Create digital art using AI brushes and share them with the community.",
+    "size": 68,
+    "reviews": 1560,
+    "ratingAvg": 4.6,
+    "downloads": 175000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "/images/app22.png",
+    "title": "DriveMate",
+    "companyName": "AutoCore",
+    "id": 22,
+    "description": "Car diagnostics, maintenance alerts, and mileage tracking in one app.",
+    "size": 66,
+    "reviews": 980,
+    "ratingAvg": 4.2,
+    "downloads": 96000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 290 },
+      { "name": "5 star", "count": 330 }
+    ]
+  },
+  {
+    "image": "/images/app23.png",
+    "title": "BudgetBuddy",
+    "companyName": "FinTechX",
+    "id": 23,
+    "description": "Personal finance app that helps manage income, savings, and spending goals.",
+    "size": 44,
+    "reviews": 1250,
+    "ratingAvg": 4.4,
+    "downloads": 111000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 85 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 550 }
+    ]
+  },
+    {
+    "image": "/images/app24.png",
+    "title": "PetPal",
+    "companyName": "FurTech",
+    "id": 24,
+    "description": "Track your pet’s health, diet, and vaccination schedule easily.",
+    "size": 39,
+    "reviews": 890,
+    "ratingAvg": 4.3,
+    "downloads": 78000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 290 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "image": "/images/app25.png",
+    "title": "EventHive",
+    "companyName": "MeetPro",
+    "id": 25,
+    "description": "Discover, create, and manage local events and meetups with ease.",
+    "size": 58,
+    "reviews": 1320,
+    "ratingAvg": 4.5,
+    "downloads": 121000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 590 }
+    ]
+  }
+]
+

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router'
+import { Link, useParams } from 'react-router'
 import useProducts from '../hooks/useProducts'
 import {
   ResponsiveContainer,
@@ -36,7 +36,7 @@ const AppDetailPage = () => {
     setShowToast(true)
     setTimeout(() => setShowToast(false), 2000);
 
-    const existingList = JSON.parse(localStorage.getItem('wishlist'))
+    const existingList = JSON.parse(localStorage.getItem('Installation'))
     let updatedList =[]
     if(existingList){
       const isDuplicate = existingList.some(p=>p.id===product.id)
@@ -47,7 +47,7 @@ const AppDetailPage = () => {
     } else{
       updatedList.push(product)
     }
-     localStorage.setItem("wishlist", JSON.stringify(updatedList))
+     localStorage.setItem("Installation", JSON.stringify(updatedList))
 
   }
 
@@ -91,7 +91,8 @@ const AppDetailPage = () => {
             </div>
 
             <div className='card-actions justify-end'>
-              <button
+              {/* <Link to="/installation"> */}
+                  <button
                 onClick={handleInstall}
                 disabled={installed}
                 className={`btn ${
@@ -100,6 +101,7 @@ const AppDetailPage = () => {
               >
                 {installed ? 'Installed' : 'Install App'}
               </button>
+              {/* </Link> */}
             </div>
           </div>
         </div>

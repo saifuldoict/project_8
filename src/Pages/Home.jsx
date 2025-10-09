@@ -7,7 +7,7 @@ import ProductCard from '../Components/ProductCard'
 import { Link } from 'react-router'
 const Home = () => {
   const { loading, error, products } = useProducts();
-  const featuredProducts = products.slice(0, 6)
+  const featuredProducts = products.slice(0, 8)
  console.log(products)
   return (
     <div >
@@ -15,14 +15,15 @@ const Home = () => {
       <StatesSection/>
 
       <div className='max-w-[1200px] mx-auto px-4'>
-      <div className='flex justify-between py-5 items-center'>
-        <h1 className='text-3xl font-semibold'>Top Apps Section</h1>
+      <div className=' py-5 items-center text-center mx-auto'>
+        <h1 className='text-3xl font-semibold  '>Trending Apps</h1>
+        <p className='text-gray-400'>Explore All Trending Apps on the Market developed by us</p>
         
       </div>
       {loading ? (
         <SkeletonLoader />
       ) : (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4'>
           {featuredProducts.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}

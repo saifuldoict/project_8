@@ -31,7 +31,7 @@ const Footer = () => {
     { icon: <FaFacebookF />, url: "#", name: "Facebook" },
     { icon: <FaTwitter />, url: "#", name: "Twitter" },
     { icon: <FaInstagram />, url: "#", name: "Instagram" },
-    { icon: <FaGithub />, url: "#", name: "GitHub" },
+    { icon: <FaGithub  />, url: "https://github.com/saifuldoict", name: "GitHub"},
     { icon: <FaLinkedin />, url: "#", name: "LinkedIn" },
   ];
 

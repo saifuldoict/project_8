@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { LuDownload } from "react-icons/lu";
+import { IoMdStar } from "react-icons/io";
+import { MdReviews } from "react-icons/md";
 import { Link, useParams } from 'react-router'
 import useProducts from '../hooks/useProducts'
 import {
@@ -22,7 +25,7 @@ const AppDetailPage = () => {
   const product = products.find(p => p.id === Number(id))
   if (!product) return <p>Product not found</p>
 
-  const { image, title, ratings, downloads, reviews, description } = product || {}
+  const { image, title, ratings, downloads, reviews, description,companyName } = product || {}
 
 
   // Prepare chart data (5★ on top, horizontal bars)
@@ -73,29 +76,40 @@ const AppDetailPage = () => {
           </figure>
 
           <div className='card-body w-full md:w-2/3'>
-            <h2 className='card-title text-2xl font-semibold mb-4'>{title}</h2>
+            <h2 className='card-title text-2xl font-semibold'>{title}</h2>
+            <p>Developed by <span className='text-[#422AD5] font-bold '>{companyName}</span></p>
+            <div className='space-y-1 mb-35'>
+              <hr className='text-[#422AD5]'/>
 
-            {/* Ratings List */}
-            <div className='space-y-1 mb-4'>
-              {ratings.map(r => (
-                <div key={r.name} className='flex items-center gap-2 text-sm'>
-                  <span className='w-16'>{r.name}</span>
-                  <span>count: {r.count}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className='flex justify-center gap-5 mb-4'>
-              <p className='text-gray-600'>Downloads: {downloads.toLocaleString()}</p>
-              <p className='text-gray-600'>Reviews: {reviews}</p>
-            </div>
-
-            <div className='card-actions justify-end'>
+                <div className='flex gap-6'>
+                     <div className='flex justify-center gap-5 mb-4'>
+                        <div className='mt-4'>
+                          <h1 className='text-gray-500'>Downloads</h1>
+                          <p className='font-bold'>{downloads}</p>
+                        </div>
+                        <LuDownload  className='mt-5 text-4xl text-[#422AD5]'/>
+                    </div>
+                    <div className='flex justify-center gap-5 mb-4'>
+                          <div className='mt-4'>
+                            <h1 className='text-gray-500'>Average Rating</h1>
+                            <p className='font-bold'>{downloads}</p>
+                          </div>
+                          <IoMdStar  className='mt-5 text-4xl text-[#422AD5]'/>
+                    </div>
+                    <div className='flex justify-center gap-5 mb-4'>
+                          <div className='mt-4'>
+                            <h1 className='text-gray-500'>Total Review</h1>
+                            <p className='font-bold'>{downloads}</p>
+                          </div>
+                          <MdReviews  className='mt-5 text-4xl text-[#422AD5]'/>
+                    </div>
+                </div>  
+                <div className='card-actions justify-center '>
               {/* <Link to="/installation"> */}
-                  <button
+                  <button 
                 onClick={handleInstall}
                 disabled={installed}
-                className={`btn ${
+                className={`btn bg-green-400 text-white px-6 ${
                   installed ? 'btn-success cursor-not-allowed' : 'btn-outline'
                 }`}
               >
@@ -103,6 +117,11 @@ const AppDetailPage = () => {
               </button>
               {/* </Link> */}
             </div>
+            </div>
+
+            
+
+            
           </div>
         </div>
         

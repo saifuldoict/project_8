@@ -19,13 +19,18 @@ const Apps = () => {
 
   return (
     <div className='max-w-[1200px] mx-auto px-4 pt-7'>
+      <div className=' py-5 items-center text-center mx-auto'>
+        <h1 className='text-3xl font-semibold  '>Our All Applications</h1>
+        <p className='text-gray-400'>Explore All Apps on the Market developed by us. We code for Millions</p>
+        
+      </div>
       {loading ? (
         <SkeletonLoader />
       ) : (
         <div>
           <div className='flex flex-col sm:flex-row justify-between py-5 items-center gap-3'>
-            <h1 className='text-3xl font-bold pb-2 sm:pb-0'>
-              All Apps{' '}
+            <h1 className='text-3xl font-bold pb-2 sm:pb-0 pl-10'>
+              {' '}
               <span className='text-sm text-gray-500'>
                 ({searchedProducts.length}) Apps Found
               </span>
@@ -51,7 +56,7 @@ const Apps = () => {
               </Link>
             </p>
           ) : (
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4'>
               {searchedProducts.map(product => (
                 <Link
                   key={product.id}
@@ -67,8 +72,8 @@ const Apps = () => {
                   </figure>
                   <div className='card-body'>
                     <h2 className='card-title'>{product.title}</h2>
-                    <div className='flex justify-center  mx-auto gap-40'>
-                              <div className='flex items-center gap-1 bg-gray-300 px-2 rounded'>
+                    <div className='flex justify-start  mx-auto gap-2'>
+                              <div className='flex items-center gap-1 bg-gray-300 rounded'>
                                 <FaArrowDown className='text-green-500'/>
                                 <p className='flex items-center gap-1 text-green-500 px-2 rounded bg-gray-300'> {product.downloads}</p>
                               </div>

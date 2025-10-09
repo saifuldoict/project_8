@@ -13,8 +13,8 @@ const ProductCard = ({ product }) => {
       <div className='card-body'>
         <h2 className='card-title'>{title}</h2>
 
-        <div className='flex justify-center  mx-auto gap-20'>
-          <div className='flex items-center gap-1 bg-gray-300 px-2 rounded'>
+        <div className='flex justify-start   gap-2'>
+          <div className='flex items-center bg-gray-300 px-2 rounded'>
             <FaArrowDown className='text-green-500'/>
             <p className='flex items-center gap-1 text-green-500 px-2 rounded bg-gray-300'> {downloads}</p>
           </div>

@@ -1,6 +1,10 @@
 
 
-
+# Navbar
+# StateSection
+# Banner Section
+# Trending Apps
+# Footer
 
 
 

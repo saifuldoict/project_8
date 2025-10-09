@@ -77,7 +77,7 @@ const AppDetailPage = () => {
 
           <div className='card-body w-full md:w-2/3'>
             <h2 className='card-title text-2xl font-semibold'>{title}</h2>
-            <p>Developed by <span className='text-[#422AD5] font-bold '>{companyName}</span></p>
+            <p>Developed by: <span className='text-[#422AD5] font-bold '>{companyName}</span></p>
             <div className='space-y-1 mb-35'>
               <hr className='text-[#422AD5]'/>
 

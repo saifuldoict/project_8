@@ -98,14 +98,14 @@ const Installation = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className='w-16 h-16 rounded-lg object-cover'
+                    className='w-10 h-10 rounded-lg object-cover'
                   />
                   <div>
                     <h2 className='text-lg font-semibold'>{item.title}</h2>
                     <div className='flex gap-3 text-gray-500 text-sm'>
                       <p>Downloads: {item.downloads}</p>
                       <p>⭐ {item.ratingAvg}</p>
-                      <p>Size: {item.size} MB</p>
+                      <p>Size: {item.size}</p>
                     </div>
                   </div>
                 </div>

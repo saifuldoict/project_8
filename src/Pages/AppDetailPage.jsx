@@ -81,22 +81,22 @@ const AppDetailPage = () => {
             <div className='space-y-1 mb-35'>
               <hr className='text-[#422AD5]'/>
 
-                <div className='flex gap-6'>
-                     <div className='flex justify-center gap-2 mb-4'>
+                <div className='flex gap-4'>
+                     <div className='flex justify-center gap-1 mb-4'>
                         <div className='mt-4'>
                           <h1 className='text-gray-500'>Downloads</h1>
                           <p className='font-bold'>{downloads}</p>
                         </div>
                         <LuDownload  className='mt-5 text-4xl text-[#422AD5]'/>
                     </div>
-                    <div className='flex justify-center gap-2 mb-4'>
+                    <div className='flex justify-center gap-1 mb-4'>
                           <div className='mt-4'>
                             <h1 className='text-gray-500'>Average Rating</h1>
                             <p className='font-bold'>{downloads}</p>
                           </div>
                           <IoMdStar  className='mt-5 text-4xl text-[#422AD5]'/>
                     </div>
-                    <div className='flex justify-center gap-2 mb-4'>
+                    <div className='flex justify-center gap-1 mb-4'>
                           <div className='mt-4'>
                             <h1 className='text-gray-500'>Total Review</h1>
                             <p className='font-bold'>{downloads}</p>

@@ -45,7 +45,7 @@ const Apps = () => {
               No apps found matching “{search}”.
               <Link
                 className='max-w-[200px] mt-4 mx-auto btn btn-outline bg-gradient-to-r from-[#422AD5] to-[#7867e9] text-white'
-                to='/apps'
+                to='/'
               >
                 Show All Apps
               </Link>

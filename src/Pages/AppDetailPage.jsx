@@ -22,7 +22,8 @@ const AppDetailPage = () => {
   const product = products.find(p => p.id === Number(id))
   if (!product) return <p>Product not found</p>
 
-  const { image, title, ratings, downloads, reviews, description } = product
+  const { image, title, ratings, downloads, reviews, description } = product || {}
+
 
   // Prepare chart data (5★ on top, horizontal bars)
   const chartData = [5, 4, 3, 2, 1].map(star => {
@@ -33,7 +34,21 @@ const AppDetailPage = () => {
   const handleInstall = () => {
     setInstalled(true)
     setShowToast(true)
-    setTimeout(() => setShowToast(false), 2000)
+    setTimeout(() => setShowToast(false), 2000);
+
+    const existingList = JSON.parse(localStorage.getItem('wishlist'))
+    let updatedList =[]
+    if(existingList){
+      const isDuplicate = existingList.some(p=>p.id===product.id)
+      if(isDuplicate){
+        return alert("Already added")
+      }
+     updatedList = [...existingList, product]
+    } else{
+      updatedList.push(product)
+    }
+     localStorage.setItem("wishlist", JSON.stringify(updatedList))
+
   }
 
   return (
@@ -92,7 +107,7 @@ const AppDetailPage = () => {
       </div>
 
       {/* Ratings Chart Below Card */}
-      <div className='max-w-[1200px] mx-auto px-4 mt-8 border-1 border-gray-100 shadow-2xl'>
+      <div className='max-w-[1200px] mx-auto px-4 mt-8 border-1 border-gray-400 rounded-2xl shadow-2xl'>
         <h2 className='text-2xl font-semibold mb-4 text-start ml-30'>
           Ratings 
         </h2>
@@ -122,12 +137,11 @@ const AppDetailPage = () => {
             </BarChart>
           </ResponsiveContainer>
         </div>
-        <div className='border-1 p-4 text-center'>
+      </div>
+      <div className='border-1 p-4 text-center max-w-[1200px] mx-auto px-4 mt-8 rounded-2xl shadow-2xl'>
           <h1 className='text-3xl font-bold text-start'>Description</h1>
         {description}
       </div>
-      </div>
-      
     </div>
   )
 }
